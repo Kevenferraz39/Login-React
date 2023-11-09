@@ -8,8 +8,8 @@
 ## Instalação
 
 1. Instale o Express e o JWT como dependências:
-
--- npm install express jsonwebtoken
+```bash
+npm install express jsonwebtoken
 
 2. Crie o servidor Express com um endpoint de login:
 
