@@ -7,13 +7,13 @@
 
 ## Instalação
 
-1. Instale o Express e o JWT como dependências:
-```bash
+# 1. Instale o Express e o JWT como dependências:
+```
 npm install express jsonwebtoken
+```
+# 2. Crie o servidor Express com um endpoint de login:
 
-2. Crie o servidor Express com um endpoint de login:
-
-```bash
+```
 // server.js
 const express = require('express');
 const jwt = require('jsonwebtoken');
@@ -58,7 +58,7 @@ app.get('/protected', validateToken, (req, res) => {
 const port = process.env.PORT || 3001;
 app.listen(port, () => console.log(`Servidor rodando na porta ${port}.`));
 ```
-3. No lado do cliente, crie o componente de login:
+# 3. No lado do cliente, crie o componente de login:
 
 ```bash
 // Login.js
